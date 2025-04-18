@@ -11,7 +11,7 @@ class ThermodynamicsModel:
 
 class ValveOpening:
     def water_volume(self,Q_total,T_hot,T_cold,T_target):
-        TM=ThermodynamicsModel
+        TM=ThermodynamicsModel()
         Q_hot,Q_cold=TM.calculate_flow_ratio(T_hot,T_cold,T_target,Q_total)
         return Q_hot,Q_cold
 
